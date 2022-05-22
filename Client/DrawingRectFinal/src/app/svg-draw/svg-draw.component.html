@@ -1,0 +1,10 @@
+<div class="container">
+    <svg class="shapeCanvas" #canvas>
+
+        
+            <rect #box class="drag-item"  x="60" y="120" fill="#e00" [attr.width]="theRectangle.width" [attr.height]="theRectangle.height" (window:mouseup)="setStatus($event, 0)" ngiResizable ></rect>
+            <text  x="60" y="110" style="padding-bottom: 8px;">Height: {{infoHeight}} , Width: {{infoWidth}}</text>
+        
+    </svg>
+          
+</div>
